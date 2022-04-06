@@ -1,4 +1,4 @@
 theme: "hyde"
-baseURL: https://fieldhouseanalytics.netlify.app/
+baseURL: http://fieldhouseanalytics.netlify.app/
 languageCode: en-us
 title: My New Hugo Site
