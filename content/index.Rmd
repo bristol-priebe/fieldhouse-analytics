@@ -1,6 +1,11 @@
 ---
 title: "Division I Baseball Ratings"
+author: "Bristol Priebe"
+date: 2022-04-07T21:13:14-05:00
+categories: ["Baseball"]
+tags: ["NCAA Baseball", "Division I", "baseball"]
 output: html_document
+showthedate: false
 ---
 
 ```{r echo=FALSE, warning=FALSE}
@@ -10,8 +15,13 @@ library(DT)
 #library(dplyr)
 ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
 ratings <- ratings[,1:6]
-
+scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
+scoresList <- scoresList[!is.na(scoresList$Date),]
+scoresList <- scoresList[order(scoresList$Date),]
+ratingsDate <- scoresList$Date[nrow(scoresList)]
 x <- kable(head(ratings), col.names = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), align = "clcccc", digits = 2, row.names = FALSE) %>% kable_styling(bootstrap_options = c("striped", "condensed"), fixed_thead = T)
 #, table.attr = "style='width:40%;'"
 datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
 ```
+
+Ratings through `r ratingsDate`
