@@ -7,13 +7,14 @@ tags: ["NCAA Baseball", "Division I", "baseball"]
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
+#knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 ```{r echo=FALSE, warning=FALSE}
 library(knitr)
 library(kableExtra)
 library(DT)
+#library(dplyr)
 ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
 ratings <- ratings[,1:6]
 
