@@ -4,8 +4,8 @@ author: "Bristol Priebe"
 date: 2022-04-07T21:13:14-05:00
 categories: ["Baseball"]
 tags: ["NCAA Baseball", "Division I", "baseball"]
-output: html_document
 showthedate: false
+output: html_document
 ---
 
 ```{r echo=FALSE, warning=FALSE}
@@ -24,4 +24,5 @@ x <- kable(head(ratings), col.names = c("Rank", "Team", "Conference", "Rating", 
 datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
 ```
 
-Ratings through `r ratingsDate`
+
+**Ratings through `r ratingsDate`**
