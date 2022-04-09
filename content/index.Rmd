@@ -26,5 +26,3 @@ ratingsDate <- scoresList$Date[nrow(scoresList)]
 ```{r echo=FALSE, warning=FALSE}
 datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
 ```
-
-
