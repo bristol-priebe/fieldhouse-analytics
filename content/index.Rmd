@@ -19,10 +19,12 @@ scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Base
 scoresList <- scoresList[!is.na(scoresList$Date),]
 scoresList <- scoresList[order(scoresList$Date),]
 ratingsDate <- scoresList$Date[nrow(scoresList)]
-x <- kable(head(ratings), col.names = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), align = "clcccc", digits = 2, row.names = FALSE) %>% kable_styling(bootstrap_options = c("striped", "condensed"), fixed_thead = T)
-#, table.attr = "style='width:40%;'"
+```
+
+**Ratings through `r ratingsDate`**
+
+```{r echo=FALSE, warning=FALSE}
 datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
 ```
 
 
-**Ratings through `r ratingsDate`**

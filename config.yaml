@@ -1,4 +1,4 @@
-theme: "hyde"
+theme: "hugo-flex"
 baseURL: https://fieldhouseanalytics.netlify.app/
 languageCode: en-us
 title: Fieldhouse Analytics
