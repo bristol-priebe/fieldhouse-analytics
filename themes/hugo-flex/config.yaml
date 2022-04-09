@@ -30,7 +30,7 @@ params:
 menu:
   nav:
   - name: Ratings/Glossary
-    url: about/
+    url: about/index.html
     weight: 1
   - name: Posts
     url: post/
