@@ -1,0 +1,48 @@
+---
+title: "Ratings/Glossary"
+author: "Bristol Priebe"
+date: "4/8/2022"
+output: html_document
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="the-ratings" class="section level1">
+<h1>The Ratings</h1>
+<p>We have baseball ratings for NCAA Division I, Division II, and Division III from 2012-present and for NAIA from 2018-present. Score data was obtained from <a href="http://ncaa.com" class="uri">http://ncaa.com</a> and from <a href="http://masseyratings.com" class="uri">http://masseyratings.com</a>. Initial ratings are derived by using the score and site of each contest with only same-division games considered. The following adjustments were made and tested within each division to find the combination with the best predictive ability over the past 9 seasons:</p>
+<ul>
+<li>How long to combine preseason rating with current season rating
+<ul>
+<li>From 0 to 60 games</li>
+</ul></li>
+<li>Whether to cap margin of victory
+<ul>
+<li>Ranging from cap of 1 to no cap</li>
+</ul></li>
+<li>Value of home field advantage
+<ul>
+<li>Ranging from 0 to 1 runs and testing to 4 decimal places</li>
+</ul></li>
+<li>Whether to include ratings from 2-5 seasons prior in preseason rating
+<ul>
+<li>Multiple linear regression was used to find best combination of prior year and then tested</li>
+</ul></li>
+</ul>
+</div>
+<div id="glossary" class="section level1">
+<h1>Glossary</h1>
+<ul>
+<li>SOS (Strength of Schedule)
+<ul>
+<li>The value for our SOS is based on the expected winning percentage of an average team against that schedule</li>
+<li>A lower value means a tougher schedule and vice versa</li>
+</ul></li>
+<li>SOR (Strength of Record)
+<ul>
+<li>This is a plus or minus value showing how the team has fared against their schedule vs the expected record of an average team</li>
+<li>A higher value means the team won more often than an average team would have</li>
+<li>This levels the SOS and illustrates which teams have performed best against their schedule regardless of difficulty</li>
+</ul></li>
+</ul>
+</div>
