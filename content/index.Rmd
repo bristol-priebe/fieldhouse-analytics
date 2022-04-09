@@ -7,11 +7,11 @@ tags: ["NCAA Baseball", "Division I", "baseball"]
 output: html_document
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
 library(kableExtra)
 library(DT)
-#library(dplyr)
+library(dplyr)
 ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
 #ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Miscellaneous Data - D-I.csv")
 ratings <- ratings[,1:6]

@@ -3,7 +3,7 @@ title: "Ratings/Glossary"
 author: "Bristol Priebe"
 date: "4/8/2022"
 output: html_document
-draft: false
+
 ---
 
 # Ratings
