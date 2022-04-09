@@ -1,10 +1,9 @@
 ---
 title: "Division I Baseball Ratings"
 author: "Bristol Priebe"
-date: 2022-04-07T21:13:14-05:00
+date: "4-8-2022"
 categories: ["Baseball"]
 tags: ["NCAA Baseball", "Division I", "baseball"]
-showthedate: false
 output: html_document
 ---
 
@@ -14,6 +13,7 @@ library(kableExtra)
 library(DT)
 #library(dplyr)
 ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
+#ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Miscellaneous Data - D-I.csv")
 ratings <- ratings[,1:6]
 scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
 scoresList <- scoresList[!is.na(scoresList$Date),]
