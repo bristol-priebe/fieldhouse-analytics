@@ -29,7 +29,6 @@ params:
   # js:                 # Uncomment to add custom JS from a list of files
   #   - js/foo.js
   #   - bar.js
-  #hideDate: true
 
 menu:
   nav:
@@ -39,3 +38,8 @@ menu:
   - name: Posts
     url: post/
     weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
