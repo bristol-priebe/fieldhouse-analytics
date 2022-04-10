@@ -38,3 +38,8 @@ menu:
   - name: Posts
     url: post/
     weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
