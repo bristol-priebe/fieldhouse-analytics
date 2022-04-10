@@ -1,7 +1,7 @@
 ---
 title: "About"
 author: "Bristol Priebe"
-date: '2022-04-09'
+date: "4-9-2022"
 slug: []
 categories: []
 tags: []
@@ -18,7 +18,7 @@ We have baseball ratings for NCAA Division I, Division II, and Division III from
 * Value of home field advantage
   + Ranging from 0 to 1 runs to 4 decimal places
 * Whether to include ratings from 2-5 seasons prior in preseason rating
-  + Multiple linear regression was used to find the best combination of prior year(s) and then tested
+  + Multiple linear regression was used to find the best combination of prior year(s) and then tested against preseason rating
   
 # Glossary
 
