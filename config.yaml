@@ -33,7 +33,7 @@ params:
 menu:
   nav:
   - name: About
-    url: about/index.html
+    url: about/about.html
     weight: 1
   - name: Posts
     url: post/
