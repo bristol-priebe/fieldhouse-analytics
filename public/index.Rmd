@@ -1,0 +1,28 @@
+---
+title: "Division I Baseball Ratings"
+author: "Bristol Priebe"
+date: "4-8-2022"
+categories: ["Baseball"]
+tags: ["NCAA Baseball", "Division I", "Baseball"]
+output: html_document
+---
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+library(DT)
+library(dplyr)
+ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
+#ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Miscellaneous Data - D-I.csv")
+ratings <- ratings[,1:6]
+scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
+scoresList <- scoresList[!is.na(scoresList$Date),]
+scoresList <- scoresList[order(scoresList$Date),]
+ratingsDate <- scoresList$Date[nrow(scoresList)]
+```
+
+**Ratings through `r ratingsDate`**
+
+```{r echo=FALSE, warning=FALSE}
+datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
+```

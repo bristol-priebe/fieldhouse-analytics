@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://fieldhouseanalytics.netlify.app/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Baseball on Fieldhouse Analytics</title>
+    <link>https://fieldhouseanalytics.netlify.app/categories/baseball/</link>
+    <description>Recent content in Baseball on Fieldhouse Analytics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://fieldhouseanalytics.netlify.app/categories/baseball/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
