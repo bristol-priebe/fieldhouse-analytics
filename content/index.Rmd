@@ -3,7 +3,7 @@ title: "Division I Baseball Ratings"
 author: "Bristol Priebe"
 date: "4-8-2022"
 categories: ["Baseball"]
-tags: ["NCAA Baseball", "Division I", "baseball"]
+tags: ["NCAA Baseball", "Division I", "Baseball"]
 output: html_document
 ---
 
