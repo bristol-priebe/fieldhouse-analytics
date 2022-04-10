@@ -1,9 +1,10 @@
 ---
 title: "About"
 author: "Bristol Priebe"
-date: "4/9/2022"
-output: html_document
-draft: false
+date: '2022-04-09'
+slug: []
+categories: []
+tags: []
 ---
 
 # Ratings
