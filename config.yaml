@@ -32,12 +32,40 @@ params:
 
 menu:
   nav:
+  - identifer: "ratings"
+    name: Ratings
+    weight: 1
+  - name: D-I
+    url: ratings/div1.html
+    parent: "ratings"
+    weight: 1
+  - name: D-II
+    url: ratings/div2.html
+    parent: "ratings"
+    weight: 2
+  - name: D-III
+    url: ratings/div3.html
+    parent: "ratings"
+    weight: 1
+  - name: NAIA
+    url: ratings/naia.html
+    parent: "ratings"
+    weight: 1
   - name: About
     url: about/
     weight: 1
+  - name: About
+    url: about/
+    weight: 1
+  - name: About
+    url: about/
+    weight: 1
+- name: About
+    url: about/
+    weight: 2
   - name: Posts
     url: post/
-    weight: 2
+    weight: 3
 
 markup:
   goldmark:
