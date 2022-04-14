@@ -1,5 +1,6 @@
 ---
 title: "Division I Baseball Ratings"
+url: /
 author: "Bristol Priebe"
 date: "4-8-2022"
 categories: ["Baseball"]
@@ -14,7 +15,6 @@ output: html_document
 library(DT)
 library(dplyr)
 library(htmltools)
-library(kableExtra)
 library(knitr)
 scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
 scoresList <- scoresList[!is.na(scoresList$Date),]

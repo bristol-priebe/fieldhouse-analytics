@@ -10,19 +10,19 @@
     <atom:link href="https://fieldhouseanalytics.netlify.app/tags/ncaa-baseball/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Division I Baseball Ratings</title>
-      <link>https://fieldhouseanalytics.netlify.app/ratings/div1/</link>
-      <guid>https://fieldhouseanalytics.netlify.app/ratings/div1/</guid>
+      <link>https://fieldhouseanalytics.netlify.app/</link>
+      <guid>https://fieldhouseanalytics.netlify.app/</guid>
       <description>
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/ratings/div1/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/index_files/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/index_files/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/index_files/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://fieldhouseanalytics.netlify.app/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://fieldhouseanalytics.netlify.app/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://fieldhouseanalytics.com/ratings/div1/&#34;&gt;Division I&lt;/a&gt; | &lt;a href=&#34;https://fieldhouseanalytics.com/ratings/div2/&#34;&gt;Division II&lt;/a&gt; | &lt;a href=&#34;https://fieldhouseanalytics.com/ratings/div3/&#34;&gt;Division III&lt;/a&gt; |
