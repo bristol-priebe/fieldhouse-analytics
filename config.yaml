@@ -32,25 +32,6 @@ params:
 
 menu:
   nav:
-  - identifer: "ratings"
-    name: Ratings
-    weight: 1
-  - name: D-I
-    url: ratings/div1/
-    parent: "ratings"
-    weight: 1
-  - name: D-II
-    url: ratings/div2/
-    parent: "ratings"
-    weight: 2
-  - name: D-III
-    url: ratings/div3/
-    parent: "ratings"
-    weight: 3
-  - name: NAIA
-    url: ratings/naia/
-    parent: "ratings"
-    weight: 4
   - name: About
     url: about/
     weight: 2

@@ -1,13 +1,14 @@
 ---
-title: "Division I Baseball Ratings"
+title: "Division II Baseball Ratings"
 author: "Bristol Priebe"
 date: "4-8-2022"
 categories: ["Baseball"]
-tags: ["NCAA Baseball", "Division I", "Baseball"]
+tags: ["NCAA Baseball", "Division II", "Baseball", "College Baseball"]
 output: html_document
 ---
 
-
+[Division I](https://fieldhouseanalytics.com/ratings/div1/) | [Division II](https://fieldhouseanalytics.com/ratings/div2/) | [Division III](https://fieldhouseanalytics.com/ratings/div3/) |
+[NAIA](https://fieldhouseanalytics.com/ratings/naia/)
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(DT)
