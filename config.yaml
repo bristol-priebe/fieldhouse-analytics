@@ -32,10 +32,21 @@ params:
 
 menu:
   nav:
-  - name: About
+  - identifier: "ratings" 
+    name: Ratings
+    url: ratings/
+    weight: 1
+  - identifier: "sub-ratings" 
+    name: "Division I""
+    url: ratings/div1/
+    parent: "ratings"
+    weight: 1
+  - identifier: "about" 
+    name: About
     url: about/
     weight: 2
-  - name: Posts
+  - identifier: "posts"
+    name: Posts
     url: post/
     weight: 3
 
