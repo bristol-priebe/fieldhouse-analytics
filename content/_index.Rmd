@@ -12,9 +12,6 @@ library(knitr)
 library(kableExtra)
 library(DT)
 library(dplyr)
-ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
-#ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Miscellaneous Data - D-I.csv")
-ratings <- ratings[,1:6]
 scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
 scoresList <- scoresList[!is.na(scoresList$Date),]
 scoresList <- scoresList[order(scoresList$Date),]
@@ -23,6 +20,20 @@ ratingsDate <- scoresList$Date[nrow(scoresList)]
 
 **Ratings through `r ratingsDate`**
 
-```{r echo=FALSE, warning=FALSE}
-datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Won", "Lost"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2)
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+#ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
+ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Ratings + Miscellaneous Data - D-I.csv")
+ratings$WL <- paste(ratings$Won, ratings$Lost, sep = "-")
+ratings$vsTop25 <- paste(ratings$WvsTop25, ratings$LvsTop25, sep = "-")
+ratings$vs26to50 <- paste(ratings$Wvs26to50, ratings$Lvs26to50, sep = "-")
+ratings$vs51to100 <- paste(ratings$Wvs51to100, ratings$Lvs51to100, sep = "-")
+ratings$vs101to200 <- paste(ratings$Wvs101to200, ratings$Lvs101to200, sep = "-")
+ratings$vs201up <- paste(ratings$Wvs201plus, ratings$Lvs201plus, sep = "-")
+ratings$Home <- paste(ratings$HomeW, ratings$HomeL, sep = "-")
+ratings$Away <- paste(ratings$AwayW, ratings$AwayL, sep = "-")
+ratings$Neutral <- paste(ratings$NeutralW, ratings$NeutralL, sep = "-")
+ratings <- ratings[,c(1:2,4,5,31,6,10:11,13:14,32:39)]
+datatable(ratings, rownames = FALSE, colnames = c("Rank", "Team", "Conference", "Rating", "Record", "RPI", "SOS", "Rank","SOR","Rank","vs Top25","vs 26-50","vs 51-100","vs 101-200", "vs 201+", "Home", "Away", "Neutral"), class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:5))), pageLength = 301)) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1)
 ```
+
