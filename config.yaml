@@ -46,11 +46,11 @@ menu:
   - name: D-III
     url: ratings/div3.html
     parent: "ratings"
-    weight: 1
+    weight: 3
   - name: NAIA
     url: ratings/naia.html
     parent: "ratings"
-    weight: 1
+    weight: 4
 - name: About
     url: about/
     weight: 2
