@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fieldhouseanalytics.netlify.app/about/</loc>
-    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/tags/baseball/</loc>
   </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/categories/baseball/</loc>
@@ -17,27 +14,9 @@
   </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/home/</loc>
-  </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/division-ii/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/ratings/div2/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/division-iii/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/ratings/div3/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/naia/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/naia-baseball/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/ratings/naia/</loc>
-  </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/tags/ncaa-baseball/</loc>
-  </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/ratings/</loc>
   </url><url>
     <loc>https://fieldhouseanalytics.netlify.app/tags/</loc>
   </url>

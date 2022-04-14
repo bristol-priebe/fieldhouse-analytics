@@ -17,6 +17,7 @@ library(DT)
 library(dplyr)
 scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
 scoresList <- scoresList[!is.na(scoresList$Date),]
+scoresList$Date <- as.Date(scoresList$Date, format = "%m/%d/%Y")
 scoresList <- scoresList[order(scoresList$Date),]
 ratingsDate <- scoresList$Date[nrow(scoresList)]
 ```
