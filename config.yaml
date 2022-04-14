@@ -4,7 +4,7 @@ languageCode: en-us
 title: Fieldhouse Analytics
 params:
   color: black           # Any color in CSS syntax
-  width: 0rem          # Any length in CSS syntax
+  width: 80rem          # Any length in CSS syntax
   footer: >-            # A hardcoded space is needed before each html element
     Except where otherwise noted, content on this site is licensed under a &#32;
     <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
