@@ -1,7 +1,9 @@
 theme: "hugo-flex"
-baseURL: https://fieldhouseanalytics.netlify.app/
+baseURL: https://fieldhouseanalytics.com/
 languageCode: en-us
 title: Fieldhouse Analytics
+permalinks:
+  singles: /:title/
 params:
   color: black           # Any color in CSS syntax
   width: 100rem          # Any length in CSS syntax

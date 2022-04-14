@@ -2,22 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/baseball/</loc>
+    <loc>https://fieldhouseanalytics.com/about/</loc>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/categories/baseball/</loc>
+    <loc>https://fieldhouseanalytics.com/</loc>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/categories/</loc>
+    <loc>https://fieldhouseanalytics.com/singles/</loc>
+    <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/college-baseball/</loc>
+    <loc>https://fieldhouseanalytics.com/tags/baseball/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/division-i/</loc>
+    <loc>https://fieldhouseanalytics.com/categories/baseball/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/</loc>
+    <loc>https://fieldhouseanalytics.com/categories/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/</loc>
+    <loc>https://fieldhouseanalytics.com/tags/college-baseball/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/ncaa-baseball/</loc>
+    <loc>https://fieldhouseanalytics.com/tags/division-i/</loc>
   </url><url>
-    <loc>https://fieldhouseanalytics.netlify.app/tags/</loc>
+    <loc>https://fieldhouseanalytics.com/home/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/division-ii/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/division-ii-baseball-ratings/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/division-iii/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/division-iii-baseball-ratings/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/naia/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/naia-baseball/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/naia-baseball-ratings/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/ncaa-baseball/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/ratings/</loc>
+  </url><url>
+    <loc>https://fieldhouseanalytics.com/tags/</loc>
   </url>
 </urlset>
