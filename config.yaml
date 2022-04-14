@@ -36,11 +36,6 @@ menu:
     name: Ratings
     url: ratings/
     weight: 1
-  - identifier: "sub-ratings" 
-    name: "Division I""
-    url: ratings/div1/
-    parent: "ratings"
-    weight: 1
   - identifier: "about" 
     name: About
     url: about/
