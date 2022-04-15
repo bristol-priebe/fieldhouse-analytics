@@ -9,8 +9,23 @@ output: html_document
 
 ---
 
-\  
-\  
+[Division I](https://fieldhouseanalytics.com/d1conf/) | [Division II](https://fieldhouseanalytics.com/d2conf/) | [Division III](https://fieldhouseanalytics.com/d3conf/) |
+[NAIA](https://fieldhouseanalytics.com/naiaconf/)
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(DT)
+library(dplyr)
+library(htmltools)
+library(knitr)
+scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
+scoresList <- scoresList[!is.na(scoresList$Date),]
+#scoresList$Date <- as.Date(scoresList$Date, format = "%m/%d/%Y")
+scoresList <- scoresList[order(scoresList$Date),]
+ratingsDate <- scoresList$Date[nrow(scoresList)]
+```
+
+**Ratings through `r ratingsDate`**
+
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(DT)
