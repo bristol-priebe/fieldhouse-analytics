@@ -50,7 +50,7 @@ sketch = htmltools::withTags(table(
     tr(lapply(c("Rank", "Team", "Conf", "FAC", "Rec", "RPI", "SOS", "Rk","SOR","Rk","1-25","26-50","51-100","101-200", "201+", "Home", "Away", "Neutral"), th))
     ))
     )
-datatable(ratings, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:17))), pageLength = 301, scrollX = TRUE, scrollY = '700px', fixedColumns = list(leftColumns = 2))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1) %>% formatStyle(columns = c(1:18), fontSize = '90%')
+datatable(ratings, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:17)), list(orderable = FALSE, targets = c(4,10:17))), pageLength = 301, scrollX = TRUE, scrollY = '700px', fixedColumns = list(leftColumns = 2))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1)
 ```
 
 
