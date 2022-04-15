@@ -40,8 +40,6 @@ ratings$Neutral <- paste(ratings$NeutralW, ratings$NeutralL, sep = "-")
 ratings <- ratings[,c(1:2,4,5,30,9:10,12:13,31:38)]
 sketch = htmltools::withTags(table(
   class = 'display',
-  #tableHeader(ratings),
-  #tableFooter(ratings),
   thead(
     tr(
       th(colspan = 5, ''), 
@@ -53,6 +51,6 @@ sketch = htmltools::withTags(table(
     tr(lapply(c("Rank", "Team", "Conf", "FAC", "Rec", "SOS", "Rk","SOR","Rk","1-25","26-50","51-100","101-200", "201+", "Home", "Away", "Neutral"), th))
     ))
     )
-datatable(ratings, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:16))), pageLength = 385, scrollX = TRUE, scrollY = '700px', fixedColumns = list(leftColumns = 4))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1) %>% formatStyle(columns = c(1:17), fontSize = '90%')
+datatable(ratings, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:16)), list(orderable = FALSE, targets = c(4,9:16))), pageLength = 385, scrollX = TRUE, scrollY = '700px', fixedColumns = list(leftColumns = 2))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1)
 ```
 

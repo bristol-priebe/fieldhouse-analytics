@@ -15,10 +15,8 @@ output: html_document
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(DT)
 library(dplyr)
-library(htmltools)
-library(knitr)
 confList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 CUrrent Average Rating By Conference - D-I.csv")
-datatable(confList, colnames = c("Rank", "Conference", "Avg Rating"), rownames = FALSE, class = "cell-border stripe", width = '400px', options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2))), pageLength = 31)) %>% formatRound("AvgRating", digits = 2)
+datatable(confList, extensions = "FixedColumns", colnames = c("Rank", "Conference", "Avg Rating"), rownames = FALSE, class = "cell-border stripe", width = '400px', options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2))), pageLength = 31, scrollX = TRUE, scrollY = '700px')) %>% formatRound("AvgRating", digits = 2)
 
 ```
 
