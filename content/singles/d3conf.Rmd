@@ -1,0 +1,23 @@
+---
+title: "Division III Conferences"
+slug: "d3conf"
+author: "Bristol Priebe"
+date: "4-8-2022"
+categories: ["Baseball"]
+tags: ["NCAA Baseball", "Division III", "Baseball", "College Baseball"]
+output: html_document
+
+---
+
+\  
+\  
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(DT)
+library(dplyr)
+confList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 CUrrent Average Rating By Conference - D-III.csv")
+datatable(confList, colnames = c("Rank", "Conference", "Avg Rating"), rownames = FALSE, class = "cell-border stripe", width = '400px', options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2))), pageLength = 31)) %>% formatRound("AvgRating", digits = 2)
+
+```
+
+

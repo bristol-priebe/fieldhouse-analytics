@@ -15,7 +15,6 @@ slug: "div2"
 library(DT)
 library(dplyr)
 library(htmltools)
-library(kableExtra)
 library(knitr)
 scoresList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Massey Scores.csv")
 scoresList <- scoresList[!is.na(scoresList$Date),]
@@ -28,7 +27,6 @@ ratingsDate <- scoresList$Date[nrow(scoresList)]
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 
-#ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Current Ratings - D-I.csv")
 ratings <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 Ratings + Miscellaneous Data - D-II.csv")
 ratings$WL <- paste(ratings$Won, ratings$Lost, sep = "-")
 ratings$vsTop25 <- paste(ratings$WvsTop25, ratings$LvsTop25, sep = "-")
@@ -55,6 +53,6 @@ sketch = htmltools::withTags(table(
     tr(lapply(c("Rank", "Team", "Conf", "FAC", "Rec", "SOS", "Rk","SOR","Rk","1-25","26-50","51-100","101-200", "201+", "Home", "Away", "Neutral"), th))
     ))
     )
-datatable(ratings, container = sketch, rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:16))), pageLength = 254)) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1) %>% formatStyle(columns = c(1:17), fontSize = '90%')
+datatable(ratings, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:16))), pageLength = 254, scrollX = TRUE, scrollY = '700px', fixedColumns = list(leftColumns = 4))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1) %>% formatStyle(columns = c(1:17), fontSize = '90%')
 ```
 

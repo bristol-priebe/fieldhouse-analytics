@@ -1,9 +1,9 @@
 ---
 title: About
 author: Bristol Priebe
-date: '2022-04-10'
+date: "4-8-2022"
 slug: "about"
-categories: []
+categories: ["College Baseball", "Ratings"]
 tags: []
 ---
 
@@ -12,25 +12,26 @@ tags: []
 
 <div id="ratings" class="section level1">
 <h1>Ratings</h1>
-<p>We have baseball ratings for NCAA Division I, Division II, and Division III from 2012-present and for NAIA from 2018-present. Score data was obtained from <a href="http://ncaa.com" class="uri">http://ncaa.com</a> and from <a href="http://masseyratings.com" class="uri">http://masseyratings.com</a>. Initial ratings are derived by using the score and site of each contest with only same-division games considered. The following adjustments were made and tested within each division to find the combination with the best predictive ability over the past nine seasons:</p>
+<p>We have baseball ratings for NCAA Division I, Division II, and Division III from 2012-present and for NAIA from 2018-present though only 2022 ratings are currently loaded on the site. Score data is obtained from <a href="http://ncaa.com" class="uri">http://ncaa.com</a> and from <a href="http://masseyratings.com" class="uri">http://masseyratings.com</a>. Current season scores are gathered from both sources and discrepancies are reconciled, often by viewing individual team schedules to confirm score, site, and/or date. Game data used in the ratings are score and site of each contest with only same-division games included. The following factors were tested in each division over all past seasons to find the best predictive combination:</p>
 <ul>
-<li>How long to combine preseason rating with current season rating
+<li>How deep into the season to keep preseason rating (currently previous year-end figure) as part of the formula
 <ul>
-<li>From 0 to 60 games</li>
+<li>Testing ranged from 0 to 60 games</li>
 </ul></li>
-<li>Whether to cap margin of victory
+<li>Include full margin of victory or institute cap
 <ul>
-<li>Ranging from cap of 1 to no cap</li>
+<li>Testing included no cap and range of 1 to 20</li>
 </ul></li>
 <li>Value of home field advantage
 <ul>
-<li>Ranging from 0 to 1 runs to 4 decimal places</li>
+<li>Tested ranged from 0 to 1 runs at 4 decimal places</li>
 </ul></li>
-<li>Whether to include ratings from 2-5 seasons prior in preseason rating
+<li>Should preseason rating be only previous year’s figure or include data from earlier seasons
 <ul>
 <li>Multiple linear regression was used to find the best combination of prior year(s) and tested against preseason rating</li>
 </ul></li>
 </ul>
+<p>Current year ratings are determined by using the best combination of factors from the list above, which varies by division.</p>
 </div>
 <div id="glossary" class="section level1">
 <h1>Glossary</h1>

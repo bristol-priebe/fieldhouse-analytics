@@ -1,24 +1,26 @@
 ---
 title: About
 author: Bristol Priebe
-date: '2022-04-10'
+date: "4-8-2022"
 slug: "about"
-categories: []
+categories: ["College Baseball", "Ratings"]
 tags: []
 ---
 
 # Ratings
 
-We have baseball ratings for NCAA Division I, Division II, and Division III from 2012-present and for NAIA from 2018-present. Score data was obtained from http://ncaa.com and from http://masseyratings.com. Initial ratings are derived by using the score and site of each contest with only same-division games considered. The following adjustments were made and tested within each division to find the combination with the best predictive ability over the past nine seasons:
+We have baseball ratings for NCAA Division I, Division II, and Division III from 2012-present and for NAIA from 2018-present though only 2022 ratings are currently loaded on the site. Score data is obtained from http://ncaa.com and from http://masseyratings.com. Current season scores are gathered from both sources and discrepancies are reconciled, often by viewing individual team schedules to confirm score, site, and/or date. Game data used in the ratings are score and site of each contest with only same-division games included. The following factors were tested in each division over all past seasons to find the best predictive combination:
 
-* How long to combine preseason rating with current season rating
-  + From 0 to 60 games
-* Whether to cap margin of victory
-  + Ranging from cap of 1 to no cap
+* How deep into the season to keep preseason rating (currently previous year-end figure) as part of the formula
+  + Testing ranged from 0 to 60 games
+* Include full margin of victory or institute cap
+  + Testing included no cap and range of 1 to 20
 * Value of home field advantage
-  + Ranging from 0 to 1 runs to 4 decimal places
-* Whether to include ratings from 2-5 seasons prior in preseason rating
+  + Tested ranged from 0 to 1 runs at 4 decimal places
+* Should preseason rating be only previous year's figure or include data from earlier seasons
   + Multiple linear regression was used to find the best combination of prior year(s) and tested against preseason rating
+  
+Current year ratings are determined by using the best combination of factors from the list above, which varies by division.
   
 # Glossary
 

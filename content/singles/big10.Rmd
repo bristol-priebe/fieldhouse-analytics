@@ -1,0 +1,48 @@
+---
+title: "Big Ten"
+slug: "big10"
+author: "Bristol Priebe"
+date: "4-8-2022"
+categories: ["Baseball"]
+tags: ["NCAA Baseball", "Division I", "Baseball", "College Baseball", "Big Ten"]
+output: html_document
+---
+
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(DT)
+library(dplyr)
+library(htmltools)
+library(knitr)
+confList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 CUrrent Average Rating By Conference - D-I.csv")
+confList <- confList[confList$Conference == "Big Ten",]
+confRank <- confList$Rank
+avgRating <- confList$AvgRating
+```
+
+**Conference Rank: `r confRank`**  
+**Average Rating: `r avgRating`**
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+projStand <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/Big Ten/Final Projected Record by Team and Count.csv")
+maxWins <- max(projStand$SimW)
+minWins <- min(projStand$SimW)
+#sketch = htmltools::withTags(table(
+#  class = 'display',
+#  thead(
+#    tr(
+#      th(colspan = 6, ''), 
+#      th(colspan = 2, 'Strength of Schedule'),
+#      th(colspan = 2, 'Stength of Record'),
+#      th(colspan = 5, 'vs FAC Teams'),
+#      th(colspan = 3, 'Location')
+#    ),
+#    tr(lapply(c("Rank", "Team", "Conf", "FAC", "Rec", "RPI", "SOS", "Rk","SOR","Rk","1-25","26-50","51-100","101-200", #"201+", "Home", "Away", "Neutral"), th))
+#    ))
+#    )
+#datatable(ratings, container = sketch, rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = #list(list(className = "dt-center", targets = c(0,2:17))), pageLength = 301)) %>% formatRound("CurrentRating", digits = #2) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("WinsOverExp", digits = 1) %>% formatStyle(columns = #c(1:18), fontSize = '90%')
+```
+
+Note: Purdue and Ohio State had two games cancelled and thus have only 22 conference games scheduled

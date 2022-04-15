@@ -10,9 +10,15 @@ slug: "ratings"
 
 # 2022 College Baseball Ratings
 
+## Rating by Division  
 [NCAA Division I](https://fieldhouseanalytics.com/div1/)  
 [NCAA Division II](https://fieldhouseanalytics.com/div2/)  
 [NCAA Division III](https://fieldhouseanalytics.com/div3/)  
-[NAIA](https://fieldhouseanalytics.com/naia/)
-
-
+[NAIA](https://fieldhouseanalytics.com/naia/)  
+  
+  
+## Conferences by Average Rating
+[NCAA Division I](https://fieldhouseanalytics.com/d1conf/)  
+[NCAA Division II](https://fieldhouseanalytics.com/d2conf/)  
+[NCAA Division III](https://fieldhouseanalytics.com/d3conf/)  
+[NAIA](https://fieldhouseanalytics.com/naiaconf/)  
