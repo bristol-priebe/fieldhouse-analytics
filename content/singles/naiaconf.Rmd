@@ -31,7 +31,7 @@ ratingsDate <- scoresList$Date[nrow(scoresList)]
 library(DT)
 library(dplyr)
 confList <- read.csv("C:/Users/Owner/Desktop/Fieldhouse Analytics/College Baseball/2022 CUrrent Average Rating By Conference - NAIA.csv")
-datatable(confList, extensions = "FixedColumns", colnames = c("Rank", "Conference", "Avg Rating"), rownames = FALSE, class = "cell-border stripe", width = '400px', options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2))), pageLength = 19, scrollX = TRUE, scrollY = '700px')) %>% formatRound("AvgRating", digits = 2)
+datatable(confList, extensions = "FixedColumns", colnames = c("Rank", "Conference", "Avg Rating"), rownames = FALSE, class = "cell-border stripe", width = '500px', options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2))), pageLength = 19, scrollX = TRUE, scrollY = '700px')) %>% formatRound("AvgRating", digits = 2)
 
 ```
 
