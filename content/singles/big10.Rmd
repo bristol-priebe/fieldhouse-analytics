@@ -55,7 +55,7 @@ sketch = htmltools::withTags(table(
     tr(lapply(c("Rank", "Team", "FAC", "RPI", "Rec", "Win%", "Rec", "Win%", "SOS", "Rk", "SOR", "Rk", "Luck", "Win/Tie 1st", "#1 Seed", "Conf Tourney", "Make Final", "Champs"), th))
     ))
     )
-datatable(projStand, container = sketch, rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:17)), list(orderable = FALSE, targets = c(4,6))), pageLength = 13, dom = 't')) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("CurrPct", digits = 3) %>% formatRound("SimPct", digits = 3) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("Luck", digits = 1) %>% formatRound("WinsOverExp", digits = 1) %>% formatPercentage(c("FirstRS","TopSeed", "Tourney", "InFinal", "TChamps"),1)
+datatable(projStand, container = sketch, extensions = "FixedColumns", rownames = FALSE, class = "cell-border stripe", options = list(columnDefs = list(list(className = "dt-center", targets = c(0,2:17)), list(orderable = FALSE, targets = c(4,6))), pageLength = 13, dom = 't', fixedColumns = list(leftColumns = 2))) %>% formatRound("CurrentRating", digits = 2) %>% formatRound("CurrPct", digits = 3) %>% formatRound("SimPct", digits = 3) %>% formatRound("ExpWinPct", digits = 3) %>% formatRound("Luck", digits = 1) %>% formatRound("WinsOverExp", digits = 1) %>% formatPercentage(c("FirstRS","TopSeed", "Tourney", "InFinal", "TChamps"),1)
 ```
 
 
