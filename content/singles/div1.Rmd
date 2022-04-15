@@ -40,8 +40,6 @@ ratings$Neutral <- paste(ratings$NeutralW, ratings$NeutralL, sep = "-")
 ratings <- ratings[,c(1:2,4,5,31,6,10:11,13:14,32:39)]
 sketch = htmltools::withTags(table(
   class = 'display',
-  #tableHeader(ratings),
-  #tableFooter(ratings),
   thead(
     tr(
       th(colspan = 6, ''), 
