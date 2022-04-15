@@ -5,6 +5,7 @@ date: "4-8-2022"
 categories: ["Baseball"]
 tags: ["NCAA Baseball", "Division II", "Baseball", "College Baseball"]
 output: html_document
+slug: "div2"
 ---
 
 [Division I](https://fieldhouseanalytics.com/div1/) | [Division II](https://fieldhouseanalytics.com/div2/) | [Division III](https://fieldhouseanalytics.com/div3/) |

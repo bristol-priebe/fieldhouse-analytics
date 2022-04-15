@@ -1,6 +1,6 @@
 ---
 title: "Division I Baseball Ratings"
-url: /
+slug: "div1"
 author: "Bristol Priebe"
 date: "4-8-2022"
 categories: ["Baseball"]
